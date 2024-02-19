@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 90%;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw 10vw;
+}
+
+#left {
+    height: 100%;
+    width: 40%;
+    background-color: #222;
+    border-radius: 20px;
+    background-image: url(https://i.pinimg.com/564x/87/66/0c/87660c277a2f43a4b7e07c10247e369a.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#right {
+    height: 100%;
+    width: 55%;
+    background-color: rgba(60, 60, 60, 0.7);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#right>h3 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#all-songs {
+    max-height: 85%; 
+    overflow-y: auto; 
+    padding: 10px; 
+}
+
+#all-songs::-webkit-scrollbar {
+    width: 8px; 
+}
+
+#all-songs::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 4px; 
+}
+
+#all-songs::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}
+
+#song-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid rgb(67, 67, 67);
+    padding: 10px;
+}
+
+#song-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#song-card:nth-last-child(1) {
+    border-bottom: 1px solid rgb(67, 67, 67);
+}
+
+#song-card img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+#song-card #part1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+#song-card #details {
+    margin-left: 10px;
+    word-spacing: -1px;
+}
+
+#song-card h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#song-card h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(146, 145, 145);    
+}
+
+#song-card h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#player {
+    width: 100%;
+    height: 10%;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px;
+}
+
+#player h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fefefe;
+    font-size: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+}   
+
+#player h3:active {
+    scale: 0.9;
+}
+
